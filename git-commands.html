@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>GIT commands I used</title>
+<link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+<body>
+<p>
+List of commands I used on git client
+
+git clone <url>
+<url> from the "Clone or Download" button
+
+cd JasonsPlayground
+to go to the local repo
+
+git add -A
+It adds current content in the filepath to the index (so that we can commit new files/folders created on local)
+
+git commit -m <my commit message>
+This commited the files, but did not add new files (which is when I realized I need to do a git add)
+
+git push origin master
+Fr pushing files to the repo. But it gave an error, because I was on a different branch
+So modified to:
+git push origin <branch-name>
+</p>
+</body>
+</html>
