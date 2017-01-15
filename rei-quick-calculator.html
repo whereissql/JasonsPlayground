@@ -18,17 +18,34 @@
 </head>
 <body>
   <h3>REI Quick Calculator</h3>
-<div>
+
+  <div>
   <p>Please input the numbers for the deal below to check for Rules of Thumb</p>
-<form>
-Purchase Price: <input type="text" name="purchase_price" />
-<br>
-<br>
-Loan Amount: <input type="text" name="loan_amount" />
-<br>
-<br>
-Expected Rent: <input type="text" name="expected_rent" />
-</form>
-</div>
+    <form class="input">
+      Purchase Price: <input type="text" name="purchase_price" />
+        <br>
+        <br>
+      Loan Amount: <input type="text" name="loan_amount" />
+        <br>
+        <br>
+      Expected Rent: <input type="text" name="expected_rent" />
+        <br>
+        <br>
+      <button onclick=getRuleOfThumb()>Submit</button>  
+    </form>
+    </div>
+  <p class="result">
+  </p>
+  <script>
+    function getRuleOfThumb() {
+      var reiData = document.getElementById("input");
+      var purchasePrice = reiData.elements[0].value;
+      var loanAmount = reiData.elements[1].value;
+      var expectedRent = reiData.elements[2].value;
+      
+      document.getElementById("result").innerHTML = "Purchase Price = " + purchasePrice + "<br>"
+       + "Loan Amount = " + loanAmount + "<br>" + "Expected Rent = " + expectedRent + "<br>"
+    }
+  </script>
 </body>
 </html>
