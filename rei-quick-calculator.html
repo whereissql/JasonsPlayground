@@ -18,9 +18,12 @@
 <title>REI Calculator</title>
 </head>
 <body>
+  <div class="left">
+  </div>
+  <div class="middle">
   <h3>REI Quick Calculator</h3>
 
-  <div>
+  <div class="main">
   <p>Please input the numbers for the deal below to check for Rules of Thumb</p>
     <form id="input">
       Purchase Price: <input type="text" name="purchase_price" />
@@ -37,6 +40,9 @@
     </div>
     <button onclick=getRuleOfThumb()>Submit</button>  
     <p id="result"></p>
+  </div>
+  <div class="right">
+  </div>
   <script>
     function getRuleOfThumb() {
       var reiData = document.getElementById("input");
