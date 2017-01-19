@@ -7,30 +7,33 @@
 </head>
 <body>
 <p>
-List of commands I used on git client
+  List of commands I used on git client
+  <br>
+  git clone <url>
+   <url> from the "Clone or Download" button
+  <br><br>
+  cd JasonsPlayground
+  To change directory to the local repo
+  <br><br>
+  git help <command>
+  Get to help file or documentation
+  <br><br>
+  git add -A
+  It adds current content in the filepath to the index (so that we can commit new files/folders created on local)
 
-git clone <url>
-<url> from the "Clone or Download" button
+  git commit -m <my commit message>
+  This commited the files, but did not add new files (which is when I realized I need to do a git add)
 
-cd JasonsPlayground
-to go to the local repo
-
-git add -A
-It adds current content in the filepath to the index (so that we can commit new files/folders created on local)
-
-git commit -m <my commit message>
-This commited the files, but did not add new files (which is when I realized I need to do a git add)
-
-git push origin master
-For pushing files to the repo. But it gave an error, because I was on a different branch
-So modified to:
-git push origin <branch-name>
+  git push origin master
+  For pushing files to the repo. But it gave an error, because I was on a different branch
+  So modified to:
+  git push origin <branch-name>
   
-git reset --hard
-Discard changes to local after last commit. Reset index and working tree.  
+  git reset --hard
+  Discard changes to local after last commit. Reset index and working tree.  
   
-git pull origin <branch-name>
-To get latest from repo to local 
+  git pull origin <branch-name>
+  To get latest from repo to local 
 </p>
 </body>
 </html>
