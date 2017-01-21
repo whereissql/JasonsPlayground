@@ -53,14 +53,14 @@
       var ruleOfThumbResults = "Purchase Price = " + purchasePrice + "<br>"
       + "Loan Amount = " + loanAmount + "<br>" + "Expected Rent = " + expectedRent + "<br><br>";
       
-      if (expectedRent < (purchasePrice/5)) {
-      ruleOfThumbResults += "Two Percent Rule not met! Expected Rent should be at least " + (purchasePrice/5) + "! <br><br>"
+      if (expectedRent < (purchasePrice/50)) {
+      ruleOfThumbResults += "Two Percent Rule not met! Expected Rent should be at least " + (purchasePrice/50) + "! <br><br>"
       } else {
       ruleOfThumbResults += "Two Percent Rule met! Property has an extremely good chance of being a successful rental! <br><br>"
       }
       
-      if (expectedRent < (purchasePrice/10)) {
-      ruleOfThumbResults += "One Percent Rule not met! Expected Rent should be at least " + (purchasePrice/10) + "! <br><br>"
+      if (expectedRent < (purchasePrice/100)) {
+      ruleOfThumbResults += "One Percent Rule not met! Expected Rent should be at least " + (purchasePrice/100) + "! <br><br>"
       } else {
       ruleOfThumbResults += "One Percent Rule met! Property has a good chance of being a successful rental! <br><br>"
       }
