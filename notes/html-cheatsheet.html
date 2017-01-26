@@ -36,5 +36,42 @@
    container-fluid to make all content mobile-friendly/ responsive
    class well creates a sense of depth around an element
   </p>
+  <p>
+    without $(document).ready(function){
+    });
+    code may run before page loads
+    
+    jQuery selects HTML elements with a selector and does actions on the element
+    examples - get animated css from https://github.com/daneden/animate.css
+    $("button").addClass("animated bounce"); 
+    $(".well").addClass("animated shake");
+    $(".text-primary").addClass("animated shake");
+    $("#target3").addClass("animated fadeOut");
+    
+    You can also use removeClass
+    examples -
+    $("button").removeClass("btn-default");
+    
+    use .css() function to change elements css properties. example
+    $("#button1").css("color","red");
+    
+    use .prop() function to change non css properties of an element. example
+    $("#button1").prop("disabled","true");
+    
+    use .html() function to change tags and content of an element
+    use .text() function to change just the text and not the tags
+    $("#button4").html("<em>Nuclear!</em>");
+    
+    use .remove() function to remove an element from the html
+    $("#button4").remove();
+    
+    use .appendTo() function to select a html element and move it to another element
+    $("#button3").appendTo("#somewhere-else");
+    
+    function-chaining - calling 2 functions on the same line
+    use .clone() function to make a copy of the element
+    $("#button2").clone().appendTo("#another-position");
+    
+  </p>
 </body>
 </html>
