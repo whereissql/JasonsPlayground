@@ -72,6 +72,27 @@
     use .clone() function to make a copy of the element
     $("#button2").clone().appendTo("#another-position");
     
+    Access the parent element by using .parent()
+    $("#button1").parent().css("background-color","blue");
+    
+    .children() helps to access the child element
+    $("#left-well").children().css("color","blue");
+    
+    Specific child of element - (jQuery uses css selectors to target elements)
+    target:nth-child(x) allows you to select all the xth elements with target class or element type
+    example -
+    $(".target:nth-child(2)").addClass("animated bounce");
+    
+    Even/odd numbered elements using class:even or class:odd
+    Note - since jQuery is zero-indexed, :even will select 1st, 3rd, etc and :odd will select 2nd, 4th etc 
+    example - 
+    $(".target:odd").addClass("animated shake");
+    $(".target:even").addClass("animated shake");
+    
+    you can target the entire body element
+    example -
+    $("body").addClass("animated fadeOut");
+    $("body").addClass("animated hinge");
   </p>
 </body>
 </html>
