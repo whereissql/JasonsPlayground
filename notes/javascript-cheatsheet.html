@@ -3,15 +3,28 @@
   <head>
   </head>
   <body>
+    <p>
+      Closures
+    </p>
     <h4>Array</h4>
     <p>
-    join(" ") gives a string of all elements of array
-    push() to add last element of array and Pop() removes last element of array
-    shift() removes first element of array and unshift() adds element to first position
-    indexOf(x) starts looking for index from front and lastIndexOf(x) looks from end of array. Both use optional second parameter to specify position to start
-    slice(x,y) gives an array starting from position x to position y. Important: x is inclusive and y is exclusive
-    slice(x) gives array of all elements from x to end of array
-    .concat() can be used to glue arrays together similar to what + does for strings
+      join(" ") gives a string of all elements of array
+      push() to add last element of array and Pop() removes last element of array
+      shift() removes first element of array and unshift() adds element to first position
+      indexOf(x) starts looking for index from front and lastIndexOf(x) looks from end of array. Both use optional second parameter to specify position to start
+      slice(x,y) gives an array starting from position x to position y. Important: x is inclusive and y is exclusive
+      slice(x) gives array of all elements from x to end of array
+      .concat() can be used to glue arrays together similar to what + does for strings
+      Arguments object...
+      All arguments passed to a function are stored in an arguments object which is similar to an array but does not have access to all the methodds that an array has
+      function argumentsCounter() {
+        console.log("You passed in ", arguments.length, " arguments";
+      }
+    </p>
+    <p>
+      The in operator can be used to check if the object contains a give property with a specific name
+      It can also be used to loop over all properties of an object
+      example (for( var name in object))
     </p>
     
     <h4>Strings</h4>
@@ -19,6 +32,17 @@
       Can use .length .charAt(x) .trim() .toUpperCase .toLowerCase
       Also uses .slice(x,y) and string[x] similar to arrays
       .indexOf("a") or .indexOf("abc") can also work. Unlike arrays where indexOf can  only look at 1 element
+    </p>
+    
+    <h4>Math object</h4>
+    <p>
+      Math.min Math.max math.sqrt Math.cos Math.sin Math.tan Math.acos Math.asin Math.atan
+      Math.PI for the constant PI
+      Math.random() for random number between 0 and 1
+    </p>
+    <p>
+      Global scope objects are stored in the Window variable
+      console.log("myVar" in Window); will return true when myVar is in the global scope
     </p>
   </body>
 </html>
